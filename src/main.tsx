@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-import { WagmiProvider } from 'wagmi';
+import { createConfig, WagmiProvider } from 'wagmi';
 import { mainnet } from 'wagmi/chains';
 import '@rainbow-me/rainbowkit/styles.css';
 import App from './App.tsx';
