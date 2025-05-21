@@ -28,6 +28,15 @@ const HeroSection: React.FC = () => {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const handleDownloadWhitepaper = () => {
+    const link = document.createElement('a');
+    link.href = '/whitepaper.pdf';
+    link.download = 'whitepaper.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
   return (
     <section 
@@ -90,7 +99,7 @@ const HeroSection: React.FC = () => {
           <Button size="lg">
             Begin The Mission
           </Button>
-          <Button variant="outline" size="lg" glowColor="magenta">
+          <Button variant="outline" size="lg" glowColor="magenta" onClick={handleDownloadWhitepaper}>
             View Whitepaper
           </Button>
         </div>
