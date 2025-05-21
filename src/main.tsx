@@ -9,7 +9,7 @@ import './index.css';
 
 const config = getDefaultConfig({
   appName: '$CIGAR Protocol',
-  projectId: 'YOUR_PROJECT_ID', // Get one from https://cloud.walletconnect.com
+  projectId: '3bf26c277abb57e44af9fcc2121db184', // Get one from https://cloud.walletconnect.com
   chains: [mainnet],
 });
 
