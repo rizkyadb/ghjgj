@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Rocket, Menu, X } from 'lucide-react';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,9 +48,9 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Connect Wallet Button */}
-          <button className="hidden md:block button-primary">
-            Connect Wallet
-          </button>
+          <div className="hidden md:block">
+            <ConnectButton />
+          </div>
 
           {/* Mobile Menu Button */}
           <button 
@@ -82,9 +83,9 @@ const Header: React.FC = () => {
               {item}
             </a>
           ))}
-          <button className="button-primary mt-6">
-            Connect Wallet
-          </button>
+          <div className="mt-6">
+            <ConnectButton />
+          </div>
         </nav>
       </div>
     </header>
